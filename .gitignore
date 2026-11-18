@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# 数据集与中间产物不入库（体积大，可用 src/make_split.py 重建）
+datasets/
+split/
+split_os/
+split_all/
+*.tar
+*.tgz
+
+# 训练临时输出
+runs/*/weights/last.pt
