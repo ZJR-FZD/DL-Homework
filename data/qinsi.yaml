@@ -1,0 +1,5 @@
+path: "/hy-tmp/cd/split/qinsi"
+train: images/train
+val: images/val
+names:
+  0: "person"

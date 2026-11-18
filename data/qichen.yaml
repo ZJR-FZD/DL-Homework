@@ -1,0 +1,7 @@
+path: "/hy-tmp/cd/split/qichen"
+train: images/train
+val: images/val
+names:
+  0: "handwriting"
+  1: "tick"
+  2: "cross"

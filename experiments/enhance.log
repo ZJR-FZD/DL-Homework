@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/hy-tmp/cd/tools/enhance.py", line 47, in link_or_copy
+    dst.hardlink_to(src)
+  File "/usr/lib/python3.11/pathlib.py", line 1208, in hardlink_to
+    os.link(target, self)
+PermissionError: [Errno 1] Operation not permitted: '/hy-tmp/cd/split/qichen/images/val' -> '/hy-tmp/cd/split_aug/qichen/images/val'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/hy-tmp/cd/tools/enhance.py", line 241, in <module>
+    main()
+  File "/hy-tmp/cd/tools/enhance.py", line 176, in main
+    link_or_copy(src / "images" / "val", dst / "images" / "val")
+  File "/hy-tmp/cd/tools/enhance.py", line 49, in link_or_copy
+    shutil.copy2(src, dst)
+  File "/usr/lib/python3.11/shutil.py", line 448, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/usr/lib/python3.11/shutil.py", line 256, in copyfile
+    with open(src, 'rb') as fsrc:
+         ^^^^^^^^^^^^^^^
+IsADirectoryError: [Errno 21] Is a directory: '/hy-tmp/cd/split/qichen/images/val'

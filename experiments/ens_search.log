@@ -1,0 +1,15 @@
+### base4
+{"members": "runs/q_hsv/weights/best.pt:1024,runs/q_mos05/weights/best.pt:1024,runs/q_s1280_s/weights/best.pt:1280,runs/q_s1024_s/weights/best.pt:1024", "map50_95": 0.3503, "map50": 0.6329, "per_class_map50_95": {"handwriting": 0.5623, "tick": 0.2928, "cross": 0.1958}, "per_class_map50": {"handwriting": 0.9253, "tick": 0.538, "cross": 0.4353}, "n_det": 14655}
+### base4+m
+{"members": "runs/q_hsv/weights/best.pt:1024,runs/q_mos05/weights/best.pt:1024,runs/q_s1280_s/weights/best.pt:1280,runs/q_s1024_s/weights/best.pt:1024,runs/q_combo_m/weights/best.pt:1024", "map50_95": 0.3591, "map50": 0.6523, "per_class_map50_95": {"handwriting": 0.5574, "tick": 0.2992, "cross": 0.2206}, "per_class_map50": {"handwriting": 0.9254, "tick": 0.5413, "cross": 0.4902}, "n_det": 20431}
+### base4+m+c
+{"members": "runs/q_hsv/weights/best.pt:1024,runs/q_mos05/weights/best.pt:1024,runs/q_s1280_s/weights/best.pt:1280,runs/q_s1024_s/weights/best.pt:1024,runs/q_combo_m/weights/best.pt:1024,runs/q_combo/weights/best.pt:1024", "map50_95": 0.3577, "map50": 0.6442, "per_class_map50_95": {"handwriting": 0.5583, "tick": 0.2914, "cross": 0.2233}, "per_class_map50": {"handwriting": 0.927, "tick": 0.5259, "cross": 0.4797}, "n_det": 23325}
+### base4+m+c2
+{"members": "runs/q_hsv/weights/best.pt:1024,runs/q_mos05/weights/best.pt:1024,runs/q_s1280_s/weights/best.pt:1280,runs/q_s1024_s/weights/best.pt:1024,runs/q_combo_m/weights/best.pt:1024,runs/q_combo/weights/best.pt:1024,runs/q_combo_s1/weights/best.pt:1024", "map50_95": 0.3574, "map50": 0.6487, "per_class_map50_95": {"handwriting": 0.5579, "tick": 0.3004, "cross": 0.2138}, "per_class_map50": {"handwriting": 0.9263, "tick": 0.543, "cross": 0.4768}, "n_det": 25294}
+### trio
+{"members": "runs/q_hsv/weights/best.pt:1024,runs/q_mos05/weights/best.pt:1024,runs/q_combo_m/weights/best.pt:1024", "map50_95": 0.3456, "map50": 0.6306, "per_class_map50_95": {"handwriting": 0.5333, "tick": 0.2934, "cross": 0.2102}, "per_class_map50": {"handwriting": 0.9132, "tick": 0.535, "cross": 0.4437}, "n_det": 17627}
+### quad_m
+{"members": "runs/q_hsv/weights/best.pt:1024,runs/q_mos05/weights/best.pt:1024,runs/q_s1280_s/weights/best.pt:1280,runs/q_combo_m/weights/best.pt:1024", "map50_95": 0.3568, "map50": 0.6582, "per_class_map50_95": {"handwriting": 0.548, "tick": 0.3007, "cross": 0.2217}, "per_class_map50": {"handwriting": 0.9189, "tick": 0.5389, "cross": 0.5169}, "n_det": 19420}
+### full7
+{"members": "runs/q_s1024_s/weights/best.pt:1024,runs/q_hsv/weights/best.pt:1024,runs/q_mos05/weights/best.pt:1024,runs/q_s1280_s/weights/best.pt:1280,runs/q_combo/weights/best.pt:1024,runs/q_combo_s1/weights/best.pt:1024,runs/q_combo_m/weights/best.pt:1024", "map50_95": 0.3574, "map50": 0.6487, "per_class_map50_95": {"handwriting": 0.5579, "tick": 0.3004, "cross": 0.2138}, "per_class_map50": {"handwriting": 0.9263, "tick": 0.543, "cross": 0.4768}, "n_det": 25294}
+### DONE

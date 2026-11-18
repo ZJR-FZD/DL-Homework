@@ -1,0 +1,30 @@
+[2026-11-18 12:17:06] START q_s1024_s :: --dataset qichen --model yolo26s.pt --imgsz 1024 --batch 12 --epochs 150 --patience 30 --workers 12
+[2026-11-18 12:39:48] DONE  q_s1024_s rc=0 epoch=60 mAP50-95=0.3140 mAP50=0.5847
+[2026-11-18 12:39:48] START n_s640_s :: --dataset qinsi --model yolo26s.pt --imgsz 640 --batch 32 --epochs 150 --patience 30 --workers 12
+[chain2] started, waiting for current job to finish
+[chain2] training idle, launching phase2
+[2026-11-18 13:27:06] START q_hsv :: --dataset qichen --model yolo26s.pt --imgsz 1024 --batch 12 --epochs 150 --patience 30 --workers 12 --hsv-h 0.005 --hsv-s 0.25 --hsv-v 0.30
+[2026-11-18 13:42:50] DONE  q_hsv rc=0 epoch=32 mAP50-95=0.3301 mAP50=0.6050
+[2026-11-18 13:42:50] START q_mos05 :: --dataset qichen --model yolo26s.pt --imgsz 1024 --batch 12 --epochs 150 --patience 30 --workers 12 --mosaic 0.5 --close-mosaic 30
+[2026-11-18 13:59:59] DONE  q_mos05 rc=0 epoch=38 mAP50-95=0.3295 mAP50=0.6236
+[2026-11-18 13:59:59] START q_s1280_s :: --dataset qichen --model yolo26s.pt --imgsz 1280 --batch 8 --epochs 150 --patience 30 --workers 12
+[chain4] killed stale queue shell 16931
+[chain4] killed stale chain 14011
+[chain4] killed stale chain 20434
+[chain4] launching final queue
+QUEUE final STARTED
+[2026-11-18 14:24:15] START q_combo :: --split-dir split_os --dataset qichen --model yolo26s.pt --imgsz 1024 --batch 12 --epochs 150 --patience 30 --workers 12 --hsv-h 0.005 --hsv-s 0.25 --hsv-v 0.30 --fliplr 0.0 --mosaic 0.5 --close-mosaic 40
+[2026-11-18 14:39:16] DONE  q_combo rc=0 epoch=16 mAP50-95=0.3227 mAP50=0.5880
+[2026-11-18 14:39:16] START q_combo_s1 :: --split-dir split_os --dataset qichen --model yolo26s.pt --imgsz 1024 --batch 12 --epochs 150 --patience 30 --workers 12 --hsv-h 0.005 --hsv-s 0.25 --hsv-v 0.30 --fliplr 0.0 --mosaic 0.5 --close-mosaic 40 --seed 1
+[2026-11-18 14:53:17] DONE  q_combo_s1 rc=0 epoch=13 mAP50-95=0.3232 mAP50=0.6041
+[2026-11-18 14:53:17] START q_combo_m :: --split-dir split_os --dataset qichen --model yolo26m.pt --imgsz 1024 --batch 8 --epochs 150 --patience 30 --workers 12 --hsv-h 0.005 --hsv-s 0.25 --hsv-v 0.30 --fliplr 0.0 --mosaic 0.5 --close-mosaic 40
+[2026-11-18 15:16:46] DONE  q_combo_m rc=0 epoch=11 mAP50-95=0.3345 mAP50=0.6402
+[2026-11-18 15:16:46] START q_mos0 :: --split-dir split_os --dataset qichen --model yolo26s.pt --imgsz 1024 --batch 12 --epochs 150 --patience 30 --workers 12 --hsv-h 0.005 --hsv-s 0.25 --hsv-v 0.30 --fliplr 0.0 --mosaic 0.5 --close-mosaic 40 --mosaic 0.0
+[2026-11-18 15:25:26] DONE  q_mos0 rc=143 epoch=20 mAP50-95=0.3120 mAP50=0.5891
+[2026-11-18 15:25:26] QUEUE final FINISHED
+[2026-11-18 15:25:47] START q_long :: full 120 epochs, late close_mosaic
+[2026-11-18 15:57:05] DONE q_long rc=0
+[chain6] q_long finished, starting qinsi generalisation run
+[chain6] START n_m_aug
+[chain6] n_m_aug finished
+[2026-11-18 18:11:02] START n_s960 :: --dataset qinsi --model yolo26s.pt --imgsz 960 --batch 16 --epochs 120 --patience 100 --mixup 0.05 --scale 0.7
